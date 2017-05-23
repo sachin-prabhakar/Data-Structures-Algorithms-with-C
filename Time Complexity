@@ -1,0 +1,35 @@
+Time complexity : 
+
+Aymtotic notations - Big O, omega,theta( Theory not asked)
+-Constant time 
+  return a+b;
+-Linear time
+for(int i=0;i<n;i++)
+-Exponential time
+for(int i=0;i<n;i++)
+for(int j=0;j<n;j++);
+---------------------------------------
+Condition : 
+1. Worst Case Scenario
+2. Where N->infinity then all lower order terms become negligable
+--------------------------------------------
+Complexity of conditional blocks is the complexity of the worst conditional block
+if(n>0){
+for(int i=0;i<n;i++)
+for(int j=0;j<n;j++);
+}
+else 
+for(int i=0;i<n;i++);
+=> Complexity is O(N^2)
+---------------------------------------------
+Loops
+N   O(N)
+N+2 O(N/2)
+N*2 O(N/2)
+N/2 O(log N)
+-------------------------------------------
+Space complexity
+Rate of growth of space with input size. 
+Recursive factorial is O(n)
+-----------------------------------
+Time Complexity of standard algorithms
