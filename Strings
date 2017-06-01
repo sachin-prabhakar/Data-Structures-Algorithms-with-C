@@ -1,0 +1,26 @@
+Anything of format "Hello" , "What's up" in common language is represented as String in computers
+
+In C, we don't have String as a data type we have char arrays
+------------------------------------------------
+Initialisation:
+char a[20] = "hello"; //valid
+char a[]="hello"; //implicit \0 is appended
+char a[]={'h','e','y','\0'}; //explicit \0 is mandatory
+
+char c[4]="hell"; //compliation error bcz ; Compiler : Where do i put \0? How do i know where your string ends?
+char a[20];
+a="hello"; // invalid
+
+strlen - no of chars excluding \0
+sizeof - size including the \0 ; char is 1 byte
+--------------------------------------------------
+Arrays and pointers are diff
+char a[]="hello";
+char *c2=a;
+we can use c2 as c2[0] or c2[1]. 
+but a++ is invalid bcz array name is a const pointer
+
+Arrays are always passed by value, that is array name is sent. never the entire array 
+char *a ="hey" // string gets stored as compile time constant 
+a[0]="u" //invalid
+constant char *p // constant pointers
